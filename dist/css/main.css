@@ -68,7 +68,9 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/test.jpg");
+  background: url("../img/bg.jpg");
+  background-position: center;
+  background-size: 100%;
   border-radius: 50%;
   border: solid 3px #eece1a;
   opacity: 1;
@@ -129,6 +131,7 @@ body {
 }
 body#bg-img {
   background: url(../img/background.jpg);
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -206,6 +209,8 @@ main#home h1 {
 }
 .about-info .bio-image {
   grid-area: bioimage;
+  /* height: 400px; */
+  object-fit: cover;
   margin: auto;
   border-radius: 50%;
   border: #eece1a 3px solid;
